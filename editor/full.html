@@ -1,1 +1,21 @@
-<iframe onload='id++<3?outerHTML+=`<textarea oninput="f[${id}]=value;f.srcdoc=f[3]+\`<script>\${f[1]}</script><style>\`+f[2]"rows=9>`:id="f"'></iframe>
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+<style>
+    iframe {
+        box-sizing: border-box;
+    }
+
+    textarea {
+        resize: none;
+    }
+</style>
+
+<body class="h-100"> 
+    <iframe onload='id++ < 3 ? outerHTML += "<textarea oninput=\"f[".concat(id, "]=value;f.srcdoc=f[3]+`<script>${f[1]}</script><style>`+f[2]\"rows=9>") : id = "f";'></iframe>
+</body>
+
+</html>
