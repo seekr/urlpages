@@ -57,7 +57,7 @@ apiVersions["0.0.1"] = {
 
   /* Return a link to view the page */
   getViewLink: function(pageData) {
-    return `http://seekr.github.io/urlpages/#${b64.encode(pageData)}`;
+    return 'http://seekr.github.io/urlpages/#${b64.encode(pageData)}';
   },
 
 }

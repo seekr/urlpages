@@ -8,7 +8,7 @@ var b64 = (function() {
   // Generate a dictionary with {key: val} as {character: index in input string}
   function generateIndexDict(a) {
     var result = {}
-    for (let i = 0; i < a.length; i++) {
+    for (i = 0; i < a.length; i++) {
       result[a[i]] = i;
     }
     return result;
